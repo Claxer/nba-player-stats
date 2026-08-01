@@ -1,0 +1,5 @@
+CURRENT_SEASON = "2025-26"
+
+APP_NAME = "NBA Player Stats"
+
+VERSION = "1.0"
