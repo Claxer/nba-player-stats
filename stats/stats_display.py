@@ -60,3 +60,5 @@ def display_stats(stats):
         print(f"Blocks      : {row['BLK']}")
         print(f"Turnovers   : {row['TOV']}")
         print()
+
+    return selected_season
