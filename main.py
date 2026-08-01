@@ -1,7 +1,7 @@
 from player_search import get_player_id
 from nba_api_handler import get_player_stats
 from stats_display import display_stats
-from last10 import get_last_10_games
+from last10_games import get_last_10_games
 from graphs import points_chart
 
 print("==============================")
@@ -16,14 +16,15 @@ while True:
 
     if player_id:
         stats = get_player_stats(player_id)
-        display_stats(stats)
-        games = get_last_10_games(player_id)
+        selected_season = display_stats(stats)
+
+        games = get_last_10_games(player_id, selected_season)
 
         print("\n========== LAST 10 GAMES ==========")
-
         print(games[["GAME_DATE", "MATCHUP", "PTS", "REB", "AST"]])
 
         points_chart(games["PTS"])
+
     else:
         print("Player not found.")
 
