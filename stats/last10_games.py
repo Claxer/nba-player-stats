@@ -1,6 +1,6 @@
 from nba_api.stats.endpoints import playergamelog
 
-def get_last_10_games(player_id, season='2025-26'):
+def get_last_10_games(player_id, season = input("Enter season (example: 2024-25): ")):
 
     gamelog = playergamelog.PlayerGameLog(
         player_id=player_id,
