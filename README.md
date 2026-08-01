@@ -30,3 +30,9 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * Working with data
 * Handling invalid input
 * Organizing a Python project
+
+## The Requirements to Run
+* nba_api
+* pandas
+* matplotlib
+* requests
