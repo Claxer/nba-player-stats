@@ -1,3 +1,4 @@
+from player_info import get_player_info, display_player_info
 from player_search import get_player_id
 from nba_api_handler import get_player_stats
 from stats_display import display_stats
@@ -15,6 +16,9 @@ while True:
     player_id = get_player_id(player_name)
 
     if player_id:
+        info = get_player_info(player_name)
+        display_player_info(info)
+
         stats = get_player_stats(player_id)
         selected_season = display_stats(stats)
 
