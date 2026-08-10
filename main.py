@@ -4,6 +4,7 @@ from nba_api_handler import get_player_stats
 from stats_display import display_stats
 from last10_games import get_last_10_games, get_season_games
 from graphs import season_points_chart
+from career_stats import get_career_stats, display_career_stats
 
 print("\n==============================")
 print("      NBA PLAYER STATS")
@@ -11,16 +12,23 @@ print("==============================")
 
 while True:
 
-    player_name = input("\nEnter NBA Player Name: ")
+    player_name = input("\nEnter NBA Player Name: ").strip()
 
     player_id = get_player_id(player_name)
 
     if player_id:
+
         info = get_player_info(player_name)
         display_player_info(info)
 
         stats = get_player_stats(player_id)
         selected_season = display_stats(stats)
+
+        career = get_career_stats(player_id)
+
+        if career:
+            totals, averages = career
+            display_career_stats(totals, averages)
 
         games = get_last_10_games(player_id, selected_season)
 
