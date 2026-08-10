@@ -15,6 +15,8 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * Handle historical seasons where some statistics (such as steals and blocks) were not officially recorded
 * Display the player's last 10 games
 * Display a graph of points scored during the selected season
+* Display career totals (games, points, rebounds, assists, steals, blocks, turnovers, minutes, and shooting totals)
+* Calculate and display career averages (PPG, RPG, APG, SPG, BPG, TOPG, and MPG)
 * Search for another player
 * Exit the program when finished
 
@@ -39,6 +41,9 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * Separating a program into multiple Python files (modules)
 * Retrieving and displaying player information from an API
 * Handling missing data for historical NBA seasons
+* Calculating career totals and career averages from multiple seasons
+* Creating and using additional Python modules for new features
+* Displaying structured career statistics separately from season statistics
 
 ## The Requirements to Run
 
@@ -56,6 +61,7 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * `stats_display.py` – Displays player statistics.
 * `last10_games.py` – Retrieves the player's last 10 games.
 * `graphs.py` – Displays graphs of player performance.
+* `career_stats.py` – Calculates and displays career totals and career averages.
 
 ## How to Run
 
