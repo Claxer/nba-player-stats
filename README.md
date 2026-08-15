@@ -20,6 +20,23 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * Search for another player
 * Exit the program when finished
 
+## Main Menu
+
+```text
+==============================
+      NBA PLAYER STATS
+==============================
+1. Search Player
+2. Career Statistics
+3. Current Season
+4. Last 10 Games
+5. Awards
+6. League Leaders
+7. Standings
+8. Compare Players
+9. Exit
+```
+
 ## Technologies Used
 
 * Python 3
@@ -44,6 +61,11 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * Calculating career totals and career averages from multiple seasons
 * Creating and using additional Python modules for new features
 * Displaying structured career statistics separately from season statistics
+* Creating a menu-driven console application
+* Organizing code into reusable functions
+* Comparing data from multiple NBA players
+* Improving program navigation and user experience
+* Building modular Python applications
 
 ## The Requirements to Run
 
@@ -62,8 +84,30 @@ A beginner-friendly Python project that allows users to search for NBA players a
 * `last10_games.py` – Retrieves the player's last 10 games.
 * `graphs.py` – Displays graphs of player performance.
 * `career_stats.py` – Calculates and displays career totals and career averages.
+* `comparison.py` – Compares two NBA players side-by-side.
 
 ## How to Run
 
-1. Clone or download the repository.
-2. Install the required libraries:
+1. Clone the repository.
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+2. Navigate to the project folder.
+
+```bash
+cd YOUR_REPOSITORY
+```
+
+3. Install the required libraries.
+
+```bash
+pip install nba_api pandas matplotlib requests
+```
+
+4. Run the program.
+
+```bash
+python main.py
+```
